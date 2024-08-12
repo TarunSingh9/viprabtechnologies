@@ -1,0 +1,74 @@
+/* Services.css */
+.services-page {
+    background-color: #e4d1d1;
+    color: black;
+    padding: 100px; /* Adjusted padding for a better layout */
+    font-family: Arial, sans-serif;
+  }
+  
+  .services-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .services-header h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .services-header p {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  
+  .services-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .service-card {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .service-card:nth-child(even) {
+    flex-direction: row-reverse; /* Reverse the order for even cards */
+  }
+  
+  .service-image {
+    width: 40%; /* Reduced width */
+    object-fit: cover;
+  }
+  
+  .service-description {
+    padding: 20px;
+    width: 60%; /* Adjusted width to match the image reduction */
+  }
+  
+  .service-description h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  
+  .service-description p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .read-more {
+    color: #f19090;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .read-more:hover {
+    text-decoration: underline;
+  }
+  
