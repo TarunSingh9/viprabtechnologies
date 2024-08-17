@@ -1,40 +1,37 @@
-// Importing necessary modules
+import React from 'react';
 import About from './pages/about';
 import Services from './pages/services';
 import Contact from './pages/contact';
 import './App.css';
 import Footer from './footer/footer';
 import Navbar from './Navbar/navbar';
-import ImageSlider from './ImageSlider';
 import Home from './pages/Home';
-
+import Review from './pages/Review';
+ 
 function App() {
+
   return (
     <div>
-      <Navbar />  {/* Navbar for navigation */}
-      
-      {/* Sections of the page */}
-      <section id="slider">
-        <ImageSlider />
+      <Navbar />  
+       <section id="home">
+        <Home />
       </section>
       <section id="about">
         <About />
       </section>
-
       <section id="services">
         <Services />
       </section>
-      <section id="home">
-        <Home />
+      <section id="review">
+        <Review />
       </section>
       <section id="contact">
         <Contact />
       </section>
 
-      <Footer />  {/* Footer at the bottom */}
+      <Footer />  
     </div>
   );
 }
 
 export default App;
-

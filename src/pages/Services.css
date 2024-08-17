@@ -1,74 +1,67 @@
-/* Services.css */
-.services-page {
-    background-color: #e4d1d1;
-    color: black;
-    padding: 100px; /* Adjusted padding for a better layout */
-    font-family: Arial, sans-serif;
-  }
-  
-  .services-header {
-    text-align: center;
-    margin-bottom: 50px;
-  }
-  
-  .services-header h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-  }
-  
-  .services-header p {
-    font-size: 1.2em;
-    line-height: 1.6;
-  }
-  
-  .services-content {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-  
-  .service-card {
-    display: flex;
-    background-color: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex-direction: row;
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  .service-card:nth-child(even) {
-    flex-direction: row-reverse; /* Reverse the order for even cards */
-  }
-  
-  .service-image {
-    width: 40%; /* Reduced width */
-    object-fit: cover;
-  }
-  
-  .service-description {
-    padding: 20px;
-    width: 60%; /* Adjusted width to match the image reduction */
-  }
-  
-  .service-description h2 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-  }
-  
-  .service-description p {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-  
-  .read-more {
-    color: #f19090;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .read-more:hover {
-    text-decoration: underline;
-  }
-  
+.service-container {
+  height: 100%;
+  padding: 0 8rem;
+  background: linear-gradient(to right, #e7e8e9, #8bbdff);
+  color: #333;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.service-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.service-header p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.service-services {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.services-card {
+  background: #fff;
+  border-radius: 16px;
+  border: 2px solid #333; /* Border color set to #333 */
+  box-shadow: 0 8px 16px rgba(95, 63, 236, 0.1);
+  padding: 20px;
+  margin: 20px;
+  width: 270px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-card:hover {
+  border-color: rgb(51, 48, 247); /* Border color on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: #479ccf;
+  margin-bottom: 15px;
+}
+
+.services-card h2 {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.services-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.service-container {
+  padding-bottom: 70px;
+  padding-top: 70px /* Padding at the bottom between cards and container bottom */
+}

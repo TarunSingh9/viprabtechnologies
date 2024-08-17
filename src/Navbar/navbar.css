@@ -1,60 +1,64 @@
-.active{
-    background-color: #fefefe;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rem;
+  background: linear-gradient(to right, #fff, #ffff); /* Background color of the navbar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(243, 239, 239);
-    position: sticky;
-    top: 0;
+.title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #333; /* Color of the title */
+  text-decoration: none;
+/*  background-color: #479ccf;  Background color for the title */
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  transition: background-color 0.3s ease;
 }
 
-nav .title {
-    font-size: 2rem;
-    margin: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-}
-nav ul{
-    display: flex;
+.title:hover {
+  background-color: #6EACDA; /* Hover background color */
 }
 
-nav ul li {
-    list-style: none;
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-nav ul li a {
-    display: block;
-    text-decoration: none;
-    color: black;
-    padding: 0.5rem;
-    margin: 1 0.5rem;
-    font-size: 1.5rem;
-    color: black;
-    border-radius: 0.5rem;
+li {
+  margin: 0 1rem;
 }
 
-nav ul li a:not(.active):hover{
-    background-color: honeydew;
+a {
+  text-decoration: none;
+  color: #333; /* Color of the links */
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 15px; /* Border radius of the buttons */
 }
 
-nav .menu {
-    display: flex;
-    position: absolute;
-    top: 0.75rem;
-    right:0.5rem;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 2.25rem;
-    height: 2rem;
+a:hover,
+a.active {
+  background-color: #479ccf; /* Background color on hover and active */
+  color: #000; /* Font color on hover and active */
 }
 
-nav .menu span {
-     height: 0.4rem;
-     width: 100%;
-     background-color: black;
-     border-radius: 0.2rem;
+a:hover {
+  background-color: #6EACDA; /* Hover color change */
+}
+
+a svg {
+  margin-right: 0.5rem;
 }

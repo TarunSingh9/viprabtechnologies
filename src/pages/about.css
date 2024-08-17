@@ -1,58 +1,88 @@
-.about-container {
-    padding-top: 8rem;
-    max-width: 1500px;
+.container {
+    width: 80%;
+    background: linear-gradient(to right, #e7e8e9, #8bbdff);
     margin: 0 auto;
-  }
-  
-  .about-container h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: black;
-    padding-bottom: 2rem;
-  }
-  
-  .about-container p {
-    font-size: 1.3rem;
-    color: black;
-    margin-bottom: 4rem;
-  }
-  
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding-bottom: 4rem;
-  }
-  
-  .card {
+    padding: 20px;
+    border-radius: 30px;
+}
+
+header {
+    background-color: #1f83ca;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.container h1 {
+    font-size: 50px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.container h1:hover {
+    color: #000; /* Bold black */
+}
+
+section {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1rem;
-    width: calc(33.333% - 1rem);
-    box-sizing: border-box;
-    color: black;
-    height: 200px;
-  }
-  
-  .card-icon {
-    font-size: 2rem;
-    margin-right: 1rem;
-    margin-bottom: 2rem;
-  }
-  
-  .card-description h3 {
-    margin: 0;
-    font-size: 1.5rem;
-    color: black;
-  }
-  
-  .card-description p {
-    margin: 0.5rem 0 0;
-    font-size: 20px;
-    color: black;
-  }
-  
+    margin-top: 20px;
+    padding: 15px;
+}
+
+section:nth-child(odd) {
+    flex-direction: row; /* Image on left, text on right */
+}
+
+section:nth-child(even) {
+    flex-direction: row-reverse; /* Text on left, image on right */
+}
+
+.image, .description {
+    flex: 1; /* Assign equal space to both image and description */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.description h2 {
+    font-size: 60px;
+    transition: color 0.3s ease;
+}
+
+.description h2:hover {
+    color: #000; /* Bold black */
+}
+
+.image img {
+    width: 100%; /* Ensure images are responsive and fill their container */
+    height: auto;
+    border-radius: 15px;
+    border: 3px solid transparent;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.image img:hover {
+    border-color: #000; /* Bold black border */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.description {
+    text-align: justify; /* Align text for better readability */
+}
+
+h1, h2 {
+    margin: 0; /* Remove margin from headings for consistent spacing */
+}
+
+p {
+    line-height: 1.2;
+    color: #333; /* Improve readability of paragraphs */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    background-color: #f2f2f2;
+    color: #666;
+}

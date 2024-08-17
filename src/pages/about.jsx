@@ -1,60 +1,64 @@
-import React from 'react'
-import { FaToolbox, FaShieldAlt, FaDatabase, FaChartLine, FaCog, FaUsers } from 'react-icons/fa';
+import React from 'react';
 import './about.css';
-
-const cards = [
-  {
-    icon: <FaToolbox />,
-    title: 'Automation Tools',
-    description: 'Cutting-edge automation tools to streamline your processes.'
-  },
-  {
-    icon: <FaShieldAlt />,
-    title: 'Face Detection Systems',
-    description: 'Advanced face detection systems for enhanced security.'
-  },
-  {
-    icon: <FaDatabase />,
-    title: 'Data Storage Solutions',
-    description: 'Secure data storage solutions to protect your valuable information.'
-  },
-  {
-    icon: <FaChartLine />,
-    title: 'Plant Resource Management',
-    description: 'Comprehensive management of plant resources to optimize performance.'
-  },
-  {
-    icon: <FaCog />,
-    title: 'Manual Storage Options',
-    description: 'Seamless manual storage options for easy management.'
-  },
-  {
-    icon: <FaUsers />,
-    title: '24/7 Support',
-    description: 'Dedicated support available around the clock.'
-  }
-];
 
 const about = () => {
   return (
-    <div className="about-container">
-    <h1>Viprab Technologies: Revolutionizing Automation and Resource Management</h1>
-    <p>
-      At Viprab Technologies, we specialize in delivering cutting-edge automation tools, advanced face detection systems, and secure data storage solutions. Our expertise extends to comprehensive plant resource management and seamless manual storage options, backed by 24/7 support. We are committed to enhancing operational efficiency and driving innovation for businesses worldwide.
-    </p>
-    <div className="card-container">
-      {cards.map((card, index) => (
-        <div key={index} className="card">
-          <div className="card-icon">{card.icon}</div>
-          <div className="card-description">
-            <h3>{card.title}</h3>
-            <p>{card.description}</p>
-          </div>
+    <div className="container">
+      <header>
+        <h1>Automation in Industries</h1>
+      </header>
+      
+      <section id="futureImpact">
+        <div className="image">
+          <img src="https://equitablegrowth.org/wp-content/uploads/2021/12/Man-working-with-machines.jpg" alt="Automation Future Impact" />
         </div>
-      ))}
+        <div className="description">
+          <h2>Future Impact</h2>
+          <p>Automation is significantly transforming industries by enhancing productivity and efficiency. It allows for more agile production systems, where processes can be rapidly adapted to changes in demand without stopping the line to reconfigure settings. Innovations in AI and sensor technologies enable robots to perform tasks with a high degree of variability and precision, opening up opportunities for automation in areas like agriculture and intricate electronic assembly.</p>
+        </div>
+      </section>
+      
+      <section id="goals">
+        <div className="image">
+          <img src="https://importanceoftechnology.net/wp-content/uploads/2021/01/Importance-Of-Technology-In-Oil-And-Gas-Industry.jpg" alt="Automation Goals" />
+        </div>
+        <div className="description">
+          <h2>Goals</h2>
+          <p>The primary goal of industrial automation is to increase operational efficiency and reduce costs. By integrating advanced technologies like the Industrial Internet of Things (IIoT) and AI, factories are becoming smarter. This includes the adoption of predictive maintenance, which minimizes downtime, and seamless interoperability among different systems, facilitating smoother operations and data-driven decision making.</p>
+        </div>
+      </section>
+      
+      <section id="needs">
+        <div className="image">
+          <img src="https://img.freepik.com/free-photo/photo-automobile-production-line-welding-car-body-modern-car-assembly-plant-auto-industry-male-worker-orange-protective-helmet_645730-108.jpg" alt="Automation Needs" />
+        </div>
+        <div className="description">
+          <h2>Needs</h2>
+          <p>To keep pace with the rapid advancements in technology, industries need to focus on upskilling their workforce to handle new tools and technologies. This involves training in digital skills, AI, and the management of automated systems. Additionally, industries need to invest in state-of-the-art infrastructure and ensure their systems are compatible with the latest standards in connectivity and data exchange.</p>
+        </div>
+      </section>
+      
+      <section id="importance">
+        <div className="image">
+          <img src="https://www.ashlingpartners.com/wp-content/uploads/2023/07/Blog-42-The-Role-of-Automation-in-the-Future-of-Energy-for-Oil-Gas-scaled-e1700084190993.jpg" alt="Automation Importance" />
+        </div>
+        <div className="description">
+          <h2>Importance</h2>
+          <p>Industrial automation is crucial for sustaining competitive advantage in a global market. It allows businesses to maintain high quality and consistency in production, manage labor costs, and improve safety standards. Moreover, automation is integral in meeting the growing demands for sustainability and efficiency, helping companies to adhere to environmental regulations and optimize resource use.</p>
+        </div>
+      </section>
+      
+      <section id="challenges">
+        <div className="image">
+          <img src="https://www.electricsolenoidvalves.com/product_images/uploaded_images/oil-field-upstream.jpg" alt="Challenges and Opportunities" />
+        </div>
+        <div className="description">
+          <h2>Challenges</h2>
+          <p>While automation presents numerous opportunities, it also poses challenges, particularly in terms of workforce displacement. However, history suggests that technology often creates more jobs than it displaces, and the jobs that are affected are transformed rather than eliminated. New roles that are emerging are often more focused on technology management, oversight, and innovation.</p>
+        </div>
+      </section>
     </div>
-  </div>
-  )
-}
+  );
+};
 
-export default about
+export default about;

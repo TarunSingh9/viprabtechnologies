@@ -1,49 +1,41 @@
 .contact-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 20px;
-    padding: 170px;
-    background-color: #FFEEAD;
-  }
-  
-  .contact-card, .map-card {
-    flex: 1;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-  
-  }
-  
-  .contact-card h2 {
-    margin-bottom: 10px;
-    font-size: 34px;
-    color: #333;
-  }
-  
-  .contact-card p {
-    margin-bottom: 10px;
-    color: #666;
-    line-height: 1.6rem;
-  }
-  
-  .contact-info p {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 8px;
-    font-size: 16px;
-  }
-  
-  .contact-info svg {
-    color: #333;
-    font-size: 20px;
-  }
-  
-  .map-card iframe {
-    border-radius: 8px;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 320px;
+  padding-right: 338px;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  background: linear-gradient(to right, #e7e8e9, #8bbdff);
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 8px;
+  padding: 20px;
+  flex-basis: 45%; 
+  border-radius: 18px;
+}
+
+.greeting-card {
+  font-size: 20px;
+  font-style: sans-serif;
+}
+
+.generic-card {
+  color: black;
+  padding-left: 47px;
+  font-style: italic;
+}
+
+.greeting-card p{
+  color: #333;
+  padding-left: 20px;
+  font-style: italic;
+
+}
+
+.contact-info p {
+  display: flex;
+
+}
