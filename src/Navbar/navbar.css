@@ -2,10 +2,15 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10rem;
+  padding: 0 8rem;
   background: linear-gradient(to right, #fff, #ffff); /* Background color of the navbar */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  
+}
+
+/* Hide the menu icons on large screens */
+.menu-icon,
+.menu-close {
+  display: none; /* Hide by default */
 }
 
 .title {
@@ -13,7 +18,6 @@ nav {
   font-weight: bold;
   color: #333; /* Color of the title */
   text-decoration: none;
-/*  background-color: #479ccf;  Background color for the title */
   color: black;
   padding: 0.5rem 1rem;
   border-radius: 15px;
@@ -24,6 +28,13 @@ nav {
 
 .title:hover {
   background-color: #6EACDA; /* Hover background color */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -61,4 +72,65 @@ a:hover {
 
 a svg {
   margin-right: 0.5rem;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  nav {
+    padding: 0 1rem; /* Reduced padding for mobile screens */
+  }
+
+  .title {
+    font-size: 1.2rem;
+    padding-right: 150px; /* Reduced size for mobile */
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #fff, #ffff);
+    width: 100%;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    cursor: pointer;
+    font-size: 2rem; /* Matching size for visual balance */
+  }
+  
+  .menu-close {
+    display: block;
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    cursor: pointer;
+    font-size: 2rem; /* Matching size for visual balance */
+  }
+
+  ul {
+    flex-direction: column;
+  }
+
+  li {
+    width: 100%; /* Ensure full width for each item */
+    margin: 0.5rem 0; /* Reduced margin for a compact layout */
+  }
+
+  a {
+    justify-content: center; /* Center alignment of text and icons */
+    padding: 0.8rem; /* Slightly increased padding for better tap targets */
+  }
 }

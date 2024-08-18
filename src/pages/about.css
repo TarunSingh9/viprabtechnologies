@@ -42,6 +42,7 @@ section:nth-child(even) {
 .image, .description {
     flex: 1; /* Assign equal space to both image and description */
     padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Ensure padding does not affect width */
 }
 
 .description h2 {
@@ -85,4 +86,62 @@ footer {
     margin-top: 20px;
     background-color: #f2f2f2;
     color: #666;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Adjust container width for mobile screens */
+        padding: 10px; /* Reduce padding for mobile screens */
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    .container h1 {
+        font-size: 30px; /* Reduce font size for mobile screens */
+    }
+
+    .container h2 {
+        font-size: 30px; /* Reduce font size for mobile screens */
+    }
+
+
+    section {
+        flex-direction: column; /* Stack image and text vertically */
+        padding: 5px; /* Reduce padding for mobile screens */
+    }
+
+    .image, .sub-heading, .description {
+        padding: 10px; /* Reduce padding for mobile screens */
+    }
+
+    .h2 .sub-heading{
+        border: 2px solid transparent;
+        min-width: 50%;
+    }
+    .image img {
+        border: 2px solid transparent; /* Adjust border for mobile screens */
+        max-width: 100%; /* Ensure images fit within their container */
+    }
+    
+    /* Ensure equal height for image and description */
+    .image {
+        height: auto; /* Allow sections to adjust their height */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Adjust the order of elements in mobile view */
+    section {
+        display: block;
+    }
+    section .image, section .description {
+        width: 100%;
+    }
+    section .description h2 {
+        margin-bottom: 10px;
+    }
 }

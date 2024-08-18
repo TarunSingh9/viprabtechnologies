@@ -50,20 +50,43 @@ p {
 .service-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
-  grid-gap:  2px; 
+  grid-gap: 2px; 
   justify-items: center;
   margin-top: 140px;
- 
-} 
+}
 
+/* Mobile-specific styles */
 @media (max-width: 768px) {
-  .service-cards {
-    grid-template-columns: 1fr; 
-    grid-gap: 10px;
+  .home-container {
+    padding: 0 1rem; /* Reduced padding for mobile screens */
   }
 
-  .card {
-    width: 100%;
-    margin-bottom: 20px;
+  .content {
+    margin-top: 100px; /* Adjusted margin for better mobile spacing */
+    margin-bottom: 20px; /* Reduced margin to fit mobile view */
+  }
+
+  .home {
+    font-size: 2rem; /* Adjusted font size for smaller screens */
+  }
+
+  p {
+    font-size: 1.2rem; /* Adjusted font size for better readability */
+  }
+
+  .buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Reduced gap for mobile */
+  }
+
+  .button {
+    padding: 10px 20px; /* Increased padding for better touch targets */
+    font-size: 1.1rem; /* Adjusted font size for mobile */
+  }
+
+  .service-cards {
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    grid-gap: 10px; /* Increased gap for better spacing */
+    margin-top: 20px; /* Adjusted margin for better mobile spacing */
   }
 }
