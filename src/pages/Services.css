@@ -39,8 +39,8 @@
 }
 
 .services-card:hover {
-  border-color: rgb(51, 48, 247); /* Border color on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+  border-color: rgb(51, 48, 247); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 .service-icon {
@@ -63,5 +63,53 @@
 
 .service-container {
   padding-bottom: 70px;
-  padding-top: 70px /* Padding at the bottom between cards and container bottom */
+  padding-top: 70px; 
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .service-container {
+    padding-top:3rem;
+    padding-left: 20px;
+    padding-right: 25px; 
+    border-radius: 15px;
+  }
+
+  .service-header h1 {
+    font-size: 2rem;
+    padding-top: 2opx; 
+  }
+
+  .service-header p {
+    font-size: 1.5rem; 
+  }
+
+  .service-services {
+    display: block; 
+  }
+
+  .services-card {
+    width: 100%; 
+    margin: 10px 0; 
+    padding: 20px; 
+  }
+
+  .service-icon {
+    font-size: 2rem; 
+    margin-bottom: 10px;
+  }
+
+  .services-card h2 {
+    font-size: 1.2rem; 
+    margin-bottom: 5px;
+  }
+
+  .services-card p {
+    font-size: 1.1rem; 
+    margin-bottom: 10px;
+  }
+
+  .services-card p + h2 {
+    margin-top: 20px; 
+  }
 }

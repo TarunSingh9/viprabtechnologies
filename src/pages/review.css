@@ -1,9 +1,8 @@
-/* review.css */
 .parent-card {
     max-width: 1600px;
     min-height: 700px;
-    margin: 0 auto; /* Center the parent card */
-    padding-left:170px;
+    margin: 0 auto;
+    padding-left: 170px;
     padding-right: 170px;
     padding-top: 50px;
     padding-bottom: 10px;
@@ -12,15 +11,17 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
 }
-.parent-card h1{
+
+.parent-card h1 {
     font-size: 60px;
     padding-bottom: 40px;
     color: black;
 }
+
 .review-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px; /* 8px space between each review item */
+    gap: 25px;
     justify-content: center;
     height: 150px;
 }
@@ -29,21 +30,23 @@
     border: 2px solid transparent;
     border-radius: 10px;
     background: linear-gradient(to right, #e7e8e9, #8bbdff);
-    padding: 16px; /* Internal padding for review cards */
+    padding: 16px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .review-card:hover {
-    border-color: black; /* Blue border on hover */
+    border-color: black;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-.review-card h3{
+
+.review-card h3 {
     font-size: 30px;
 }
-.review-card p{
-        font-size: 18px;
-        color: #333;
+
+.review-card p {
+    font-size: 18px;
+    color: #333;
 }
 
 .review-card img {
@@ -64,12 +67,12 @@
 
 .review-figcaption div:first-child {
     font-weight: bold;
-    color: #1f2937; /* Dark text color */
+    color: #1f2937;
 }
 
 .review-figcaption div:last-child {
     font-size: 14px;
-    color: #6b7280; /* Gray text color */
+    color: #6b7280;
 }
 
 h1 {
@@ -77,5 +80,48 @@ h1 {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
-    color: #1f2937; /* Dark text color */
+    color: #1f2937;
+}
+
+@media (max-width: 768px) {
+    .parent-card {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .parent-card h1 {
+        font-size: 32px;
+    }
+
+    .review-grid {
+        display: block;
+        height: auto;
+    }
+
+    .review-card {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .review-card h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .review-card p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .review-figcaption {
+        margin-top: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .review-figcaption div {
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
 }
